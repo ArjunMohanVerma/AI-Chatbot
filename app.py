@@ -3,14 +3,18 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 
+
 # Load environment variables
 load_dotenv()
 
 # Configure the Google Generative AI
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+for m in genai.list_models():
+    print(m.name, m.supported_generation_methods)
+
 # Initialize Gemini Pro model and chat object
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.5-flash")
 chat = model.start_chat(history=[])
 
 # Function to get responses from the Gemini model

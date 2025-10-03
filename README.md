@@ -29,12 +29,12 @@ conda create -p env python=3.10 -y
 
 3. Install Dependencies
 ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
 4. Environment Configuration Create a .env file in the root directory:
 ```bash
-GOOGLE_API_KEY =your_api_key_here
+GOOGLE_API_KEY=AIzaSyBLGpx_Z6zNIurVVJGCHPXzT209Xc1B3ZY
 ```
 
 5. Run the Application
