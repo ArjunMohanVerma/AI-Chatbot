@@ -34,10 +34,11 @@ conda create -p env python=3.10 -y
 
 4. Environment Configuration Create a .env file in the root directory:
 ```bash
-GOOGLE_API_KEY=AIzaSyBLGpx_Z6zNIurVVJGCHPXzT209Xc1B3ZY
+
 ```
 
 5. Run the Application
 ```bash
+python -m streamlit run app.py
 streamlit run app.py
 ```
